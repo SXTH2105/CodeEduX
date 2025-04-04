@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - CodeEduX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Code<span>EduX</span></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="database.html">Database</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn login-btn">Login</a>
+                <a href="#" class="btn signup-btn">Sign Up</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Browse our comprehensive collection of programming and database courses</p>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <div class="container">
+            <div class="course-categories">
+                <button class="category-btn active" data-category="all">All Courses</button>
+                <button class="category-btn" data-category="web">Web Development</button>
+                <button class="category-btn" data-category="database">Database</button>
+                <button class="category-btn" data-category="programming">Programming</button>
+                <button class="category-btn" data-category="mobile">Mobile Development</button>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Web Development Courses -->
+                <div class="course-card" data-category="web" id="web-dev">
+                    <img src="https://via.placeholder.com/300x200/0a2647/ffffff?text=Web+Dev" alt="Web Development">
+                    <div class="course-info">
+                        <div class="course-badge">Bestseller</div>
+                        <h3>Complete Web Development Bootcamp</h3>
+                        <p>Master HTML, CSS, JavaScript, React, Node.js and more in this comprehensive course.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.8 (1.2k reviews)</span>
+                            <span><i class="fas fa-clock"></i> 60 hours</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$99.99 <del>$199.99</del></span>
+                            <a href="#" class="btn small-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Courses -->
+                <div class="course-card" data-category="database" id="sql">
+                    <img src="https://via.placeholder.com/300x200/0a2647/ffffff?text=SQL" alt="SQL Database">
+                    <div class="course-info">
+                        <div class="course-badge">Popular</div>
+                        <h3>SQL for Beginners to Advanced</h3>
+                        <p>Learn to work with relational databases, write complex queries, and optimize performance.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.7 (890 reviews)</span>
+                            <span><i class="fas fa-clock"></i> 30 hours</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$79.99 <del>$129.99</del></span>
+                            <a href="#" class="btn small-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Courses -->
+                <div class="course-card" data-category="programming" id="python">
+                    <img src="https://via.placeholder.com/300x200/0a2647/ffffff?text=Python" alt="Python Programming">
+                    <div class="course-info">
+                        <h3>Python Programming Masterclass</h3>
+                        <p>From basics to advanced Python concepts, data structures, and real-world applications.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.9 (1.5k reviews)</span>
+                            <span><i class="fas fa-clock"></i> 45 hours</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$89.99 <del>$149.99</del></span>
+                            <a href="#" class="btn small-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More courses would be listed here -->
+                <div class="course-card" data-category="mobile">
+                    <img src="https://via.placeholder.com/300x200/0a2647/ffffff?text=Mobile" alt="Mobile Development">
+                    <div class="course-info">
+                        <h3>Mobile App Development with Flutter</h3>
+                        <p>Build cross-platform mobile apps using Flutter and Dart programming language.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.6 (750 reviews)</span>
+                            <span><i class="fas fa-clock"></i> 35 hours</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$84.99 <del>$139.99</del></span>
+                            <a href="#" class="btn small-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="database">
+                    <img src="https://via.placeholder.com/300x200/0a2647/ffffff?text=MongoDB" alt="MongoDB">
+                    <div class="course-info">
+                        <h3>MongoDB - The Complete Developer's Guide</h3>
+                        <p>Master MongoDB and NoSQL databases with hands-on projects and examples.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.5 (620 reviews)</span>
+                            <span><i class="fas fa-clock"></i> 25 hours</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$74.99 <del>$119.99</del></span>
+                            <a href="#" class="btn small-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="web">
+                    <img src="https://via.placeholder.com/300x200/0a2647/ffffff?text=React" alt="React JS">
+                    <div class="course-info">
+                        <div class="course-badge">New</div>
+                        <h3>React JS - Frontend Mastery</h3>
+                        <p>Build modern, responsive web applications with React, Hooks, and Context API.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.8 (980 reviews)</span>
+                            <span><i class="fas fa-clock"></i> 40 hours</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$89.99 <del>$149.99</del></span>
+                            <a href="#" class="btn small-btn">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta cta-light">
+        <div class="container">
+            <h2>Can't Find What You're Looking For?</h2>
+            <p>We're constantly adding new courses. Let us know what you'd like to learn!</p>
+            <a href="contact.html" class="btn primary-btn">Request a Course</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

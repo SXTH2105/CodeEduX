@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Education - CodeEduX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Code<span>EduX</span></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="database.html" class="active">Database</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn login-btn">Login</a>
+                <a href="#" class="btn signup-btn">Sign Up</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Database Education</h1>
+            <p>Master the art of data management with our comprehensive database resources</p>
+        </div>
+    </section>
+
+    <section class="database-section">
+        <div class="container">
+            <div class="database-tabs">
+                <button class="tab-btn active" data-tab="relational">Relational Databases</button>
+                <button class="tab-btn" data-tab="nosql">NoSQL Databases</button>
+                <button class="tab-btn" data-tab="tools">Database Tools</button>
+                <button class="tab-btn" data-tab="concepts">Core Concepts</button>
+            </div>
+
+            <div class="tab-content active" id="relational">
+                <h2>Relational Databases</h2>
+                <div class="database-grid">
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>SQL Fundamentals</h3>
+                        <p>Learn the essential SQL commands for querying and manipulating relational data.</p>
+                        <a href="courses.html#sql" class="btn small-btn">Learn SQL</a>
+                    </div>
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h3>Database Design</h3>
+                        <p>Master normalization, relationships, and schema design principles.</p>
+                        <a href="#" class="btn small-btn">Start Learning</a>
+                    </div>
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>MySQL & PostgreSQL</h3>
+                        <p>Deep dive into the most popular open-source relational database systems.</p>
+                        <a href="#" class="btn small-btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="nosql">
+                <h2>NoSQL Databases</h2>
+                <div class="database-grid">
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-json"></i>
+                        </div>
+                        <h3>MongoDB</h3>
+                        <p>Learn document-oriented database concepts with MongoDB.</p>
+                        <a href="#" class="btn small-btn">Start Course</a>
+                    </div>
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Graph Databases</h3>
+                        <p>Explore Neo4j and graph database concepts for connected data.</p>
+                        <a href="#" class="btn small-btn">Learn More</a>
+                    </div>
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Key-Value Stores</h3>
+                        <p>Understand Redis and other key-value database systems.</p>
+                        <a href="#" class="btn small-btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tools">
+                <h2>Database Tools</h2>
+                <div class="database-grid">
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Database Clients</h3>
+                        <p>Master tools like DBeaver, TablePlus, and MySQL Workbench.</p>
+                        <a href="#" class="btn small-btn">Learn Tools</a>
+                    </div>
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Performance Tuning</h3>
+                        <p>Learn to optimize queries and improve database performance.</p>
+                        <a href="#" class="btn small-btn">Optimize</a>
+                    </div>
+                    <div class="database-card">
+                        <div class="database-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security Best Practices</h3>
+                        <p>Implement proper security measures for your databases.</p>
+                        <a href="#" class="btn small-btn">Secure Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="concepts">
+                <h2>Core Database Concepts</h2>
+                <div class="concepts-list">
+                    <div class="concept-item">
+                        <h3><i class="fas fa-chevron-right"></i> ACID Properties</h3>
+                        <div class="concept-content">
+                            <p>Atomicity, Consistency, Isolation, and Durability - the four key properties that guarantee reliable database transactions.</p>
+                            <a href="#" class="btn small-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="concept-item">
+                        <h3><i class="fas fa-chevron-right"></i> Indexing Strategies</h3>
+                        <div class="concept-content">
+                            <p>Understand how database indexes work and how to use them effectively to speed up queries.</p>
+                            <a href="#" class="btn small-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="concept-item">
+                        <h3><i class="fas fa-chevron-right"></i> Transaction Isolation Levels</h3>
+                        <div class="concept-content">
+                            <p>Learn about read uncommitted, read committed, repeatable read, and serializable isolation levels.</p>
+                            <a href="#" class="btn small-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="concept-item">
+                        <h3><i class="fas fa-chevron-right"></i> Database Normalization</h3>
+                        <div class="concept-content">
+                            <p>The process of organizing data to minimize redundancy and improve data integrity.</p>
+                            <a href="#" class="btn small-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="database-resources">
+        <div class="container">
+            <h2>Free Database Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>SQL Cheat Sheet</h3>
+                    <p>Download our comprehensive SQL reference guide covering all major commands.</p>
+                    <a href="#" class="btn small-btn"><i class="fas fa-download"></i> Download</a>
+                </div>
+                <div class="resource-card">
+                    <h3>Database Design Templates</h3>
+                    <p>Ready-to-use ER diagram templates for common database scenarios.</p>
+                    <a href="#" class="btn small-btn"><i class="fas fa-download"></i> Download</a>
+                </div>
+                <div class="resource-card">
+                    <h3>Query Optimization Guide</h3>
+                    <p>Learn techniques to write efficient SQL queries that perform well.</p>
+                    <a href="#" class="btn small-btn"><i class="fas fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
