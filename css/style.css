@@ -1115,3 +1115,19 @@ p {
         opacity: 1;
     }
 }
+/* Typing effect styles */
+#typing-heading {
+    color: #2c74b3; /* White text */
+}
+
+.typing-cursor {
+    display: inline-block;
+    margin-left: 3px;
+    color: #2c74b3; /* White cursor */
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
