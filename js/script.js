@@ -206,3 +206,69 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('load', animateOnScroll);
     window.addEventListener('scroll', animateOnScroll);
 });
+// Advanced typing effect with all white text
+function advancedTypeWriter() {
+    const heading = document.getElementById('typing-heading');
+    const cursor = document.querySelector('.typing-cursor');
+    const phrases = [
+        "Master Coding with CodeEduX",
+        "Learn WebDevelopment",
+        "HTML&CSS",
+        "JavaScript",
+        "Master Databases",
+        "Become a Programmer",
+        
+
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let isEnd = false;
+    const typingSpeed = 100;
+    const deletingSpeed = 50;
+    const pauseBetweenPhrases = 2000;
+    
+    function type() {
+        const currentPhrase = phrases[phraseIndex];
+        
+        if (isDeleting) {
+            // Deleting characters
+            heading.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            // Typing characters
+            heading.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
+        }
+        
+        if (!isDeleting && charIndex === currentPhrase.length) {
+            // At end of phrase, pause then start deleting
+            isEnd = true;
+            setTimeout(() => {
+                isDeleting = true;
+                isEnd = false;
+                type();
+            }, pauseBetweenPhrases);
+        } else if (isDeleting && charIndex === 0) {
+            // At start of phrase, switch to next phrase
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            setTimeout(type, typingSpeed);
+        } else {
+            // Continue typing/deleting
+            const speed = isDeleting ? deletingSpeed : typingSpeed;
+            setTimeout(type, isEnd ? pauseBetweenPhrases : speed);
+        }
+        
+        // Always keep cursor at the end
+        heading.appendChild(cursor);
+    }
+    
+    // Start with just the cursor
+    heading.appendChild(cursor);
+    // Start typing after a short delay
+    setTimeout(type, 500);
+}
+
+// Call the advanced typing function when the page loads
+advancedTypeWriter();
